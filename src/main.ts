@@ -41,8 +41,18 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <img src="/assets/zayne.jpg" alt="Zayne Scarlett">
         <div class="character-info">
           <h3>Zayne Scarlett</h3>
-          <p>Idade: 25 | O Primogênito</p>
-          <p>Sério, responsável e o primeiro a ser transformado. Ele guarda a honra da família.</p>
+          <p>Idade: 22 | Nobre e Protetor</p>
+          <p>Sério e quieto, possui um lado autoritário e protetor. Mantém tudo em segredo pela honra dos Scarlett.</p>
+        </div>
+      </div>
+
+      <!-- Rafael -->
+      <div class="character-card">
+        <img src="/assets/rafael.jpg" alt="Rafael Scarlett">
+        <div class="character-info">
+          <h3>Rafael Scarlett</h3>
+          <p>Idade: 20 | O Artista Aventureiro</p>
+          <p>Espírito aventureiro e amante da arte. A maioria dos quadros do casarão foram pintados por ele.</p>
         </div>
       </div>
 
@@ -51,29 +61,40 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <img src="/assets/caleb.jpg" alt="Caleb Scarlett">
         <div class="character-info">
           <h3>Caleb Scarlett</h3>
-          <p>Idade: 20 | O Caçula</p>
-          <p>Agitado e brincalhão, adora adrenalina. É a luz gentil nas sombras da família.</p>
+          <p>Idade: 20 | O Caçula Sorridente</p>
+          <p>Agitado, brincalhão e gentil. Adora adrenalina e é o mais novo da família.</p>
         </div>
       </div>
 
-      <!-- Mary (Text only for now or placeholder) -->
+      <!-- Sylus (Placeholder for visual consistency) -->
+      <div class="character-card" style="background: linear-gradient(135deg, #4b0000 0%, #200000 100%);">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
+          <div style="text-align: center; padding: 20px;">
+             <h3>Sylus Scarlett</h3>
+             <p>Idade: 20 | O Silencioso</p>
+             <p style="font-size: 0.8rem; margin-top: 10px;">Mudou totalmente ao se tornar vampiro. De poucas palavras e olhar intenso.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Xavier (Placeholder for visual consistency) -->
+      <div class="character-card" style="background: linear-gradient(135deg, #1a2a47 0%, #0a1220 100%);">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
+          <div style="text-align: center; padding: 20px;">
+             <h3>Xavier Scarlett</h3>
+             <p>Idade: 20 | O Esgrimista</p>
+             <p style="font-size: 0.8rem; margin-top: 10px;">Alegre, extrovertido e mestre na esgrima. Ama tocar piano nas noites do vilarejo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mary -->
       <div class="character-card" style="background: linear-gradient(135deg, #1a472a 0%, #0a2012 100%);">
         <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
           <div style="text-align: center; padding: 20px;">
              <h3>Mary Scarlett</h3>
              <p>A Matriarca & Bruxa</p>
              <p style="font-size: 0.8rem; margin-top: 10px;">O elo místico que mantém a família unida.</p>
-          </div>
-        </div>
-      </div>
-
-       <!-- Outros Irmãos -->
-      <div class="character-card" style="background: linear-gradient(135deg, #4b0082 0%, #1a0033 100%);">
-        <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
-          <div style="text-align: center; padding: 20px;">
-             <h3>Sylus, Rafael & Xavier</h3>
-             <p>A Fraternidade Sombria</p>
-             <p style="font-size: 0.8rem; margin-top: 10px;">Irmãos cujos destinos estão selados pelo sangue.</p>
           </div>
         </div>
       </div>
