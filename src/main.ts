@@ -123,7 +123,53 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </a>
     </div>
   </section>
+
+  <!-- Character Highlight Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-image-container">
+        <img id="modal-img" src="" alt="Destaque" class="modal-image">
+      </div>
+      <div class="modal-quote-container">
+         <div class="quote-bubble">
+           <p id="modal-quote"></p>
+         </div>
+      </div>
+    </div>
+  </div>
 `
+
+// Character Modal Logic
+const modal = document.getElementById('modal') as HTMLElement;
+const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+const modalQuote = document.getElementById('modal-quote') as HTMLElement;
+const closeModal = document.querySelector('.close-modal') as HTMLElement;
+
+// Trigger specifically for Rafael
+const rafaelCard = document.querySelector('.character-card img[alt="Rafael Scarlett"]')?.parentElement;
+
+if (rafaelCard) {
+  rafaelCard.addEventListener('click', () => {
+    modalImg.src = '/assets/rafael_full.png';
+    modalQuote.innerText = 'O mundo é como uma tela em branco… e eu não nasci para observar — eu nasci para pintar cada canto dele com minhas próprias aventuras.';
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Stop scroll
+  });
+}
+
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto'; // Re-enable scroll
+});
+
+// Close modal on click outside
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
 
 // Parallax effect for the hero background
 window.addEventListener('scroll', () => {
