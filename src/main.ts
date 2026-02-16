@@ -42,7 +42,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="character-info">
           <h3>Zayne Scarlett</h3>
           <p>Idade: 22 | Nobre e Protetor</p>
-          <p>Sério e quieto, possui um lado autoritário e protetor. Mantém tudo em segredo pela honra dos Scarlett.</p>
+          <p>Sério e quieto, possui um lado autoritário e protetor com a família. Mantém segredos para preservar a nobreza dos Scarlett. Cabelos negros e olhos verdes.</p>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="character-info">
           <h3>Rafael Scarlett</h3>
           <p>Idade: 20 | O Artista Aventureiro</p>
-          <p>Espírito aventureiro e amante da arte. A maioria dos quadros do casarão foram pintados por ele.</p>
+          <p>Espírito aventureiro e alegre. Ama tudo que envolve arte e pintou a maioria dos quadros do casarão. Olhos lilás claros como ametista.</p>
         </div>
       </div>
 
@@ -62,28 +62,28 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="character-info">
           <h3>Caleb Scarlett</h3>
           <p>Idade: 20 | O Caçula Sorridente</p>
-          <p>Agitado, brincalhão e gentil. Adora adrenalina e é o mais novo da família.</p>
+          <p>Agitado, brincalhão e sorridente. Adora adrenalina, é gentil e educado. O mais novo da família. Cabelos negros e olhos cinzas.</p>
         </div>
       </div>
 
-      <!-- Sylus (Placeholder for visual consistency) -->
+      <!-- Sylus -->
       <div class="character-card" style="background: linear-gradient(135deg, #4b0000 0%, #200000 100%);">
         <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
           <div style="text-align: center; padding: 20px;">
              <h3>Sylus Scarlett</h3>
              <p>Idade: 20 | O Silencioso</p>
-             <p style="font-size: 0.8rem; margin-top: 10px;">Mudou totalmente ao se tornar vampiro. De poucas palavras e olhar intenso.</p>
+             <p style="font-size: 0.8rem; margin-top: 10px;">De poucas palavras e olhar marcante. Único que teve a aparência mudada totalmente ao se tornar vampiro. Cabelos brancos e olhos vermelhos.</p>
           </div>
         </div>
       </div>
 
-      <!-- Xavier (Placeholder for visual consistency) -->
+      <!-- Xavier -->
       <div class="character-card" style="background: linear-gradient(135deg, #1a2a47 0%, #0a1220 100%);">
         <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-gold); font-family: var(--font-header);">
           <div style="text-align: center; padding: 20px;">
              <h3>Xavier Scarlett</h3>
              <p>Idade: 20 | O Esgrimista</p>
-             <p style="font-size: 0.8rem; margin-top: 10px;">Alegre, extrovertido e mestre na esgrima. Ama tocar piano nas noites do vilarejo.</p>
+             <p style="font-size: 0.8rem; margin-top: 10px;">Alegre e extrovertido. Pratica esgrima desde os 4 anos e ama tocar piano. Cabelos loiros e olhos azuis.</p>
           </div>
         </div>
       </div>
