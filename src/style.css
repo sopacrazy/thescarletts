@@ -286,50 +286,63 @@ section {
 
 .modal-content {
   position: relative;
-  max-width: 900px;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  background: var(--glass);
-  padding: 40px;
-  border: 1px solid var(--accent-gold);
-  border-radius: 8px;
-  box-shadow: 0 0 50px rgba(139, 0, 0, 0.3);
+  max-width: 1000px;
+  width: 95%;
+  background: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: modalIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .modal-image-container {
   width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .modal-image {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--accent-gold);
 }
 
 .modal-quote-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  width: 350px;
+  z-index: 10;
 }
 
 .quote-bubble {
   position: relative;
-  background: rgba(139, 0, 0, 0.15);
-  border: 1px solid var(--accent-gold);
-  padding: 30px;
+  background: rgba(10, 10, 10, 0.95);
+  border: 2px solid var(--accent-gold);
+  padding: 25px;
   border-radius: 20px;
   font-family: var(--font-header);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--text-main);
-  line-height: 1.4;
-  margin-top: 20px;
+  line-height: 1.5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.quote-bubble::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent var(--accent-gold) transparent transparent;
 }
 
 .quote-bubble::before {
